@@ -16,16 +16,14 @@ Este projeto é uma API RESTful de gerenciamento de tarefas, com suporte para cr
 Clone este repositório para o seu ambiente local:
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-tarefas.git
-cd projeto-tarefas
+git clone https://github.com/gustavohpaula/taskManager.git
+cd taskManager
 ```
 ### Instalação de Dependências
 Instale as dependências do projeto utilizando npm ou yarn:
 
 ```bash
 npm install
-# ou
-yarn install
 ```
 ### Configuração do Banco de Dados
 Para este projeto, utilizamos PostgreSQL. Certifique-se de ter o PostgreSQL instalado e configurado na sua máquina.
@@ -53,6 +51,8 @@ O Knex.js utiliza migrações para criar e gerenciar o esquema do banco de dados
 
 ```bash
 npx knex migrate:latest
+#ou
+npm run migrate
 ```
 
 Isso criará a tabela tasks no seu banco de dados com os campos id, title e completed.
@@ -82,7 +82,9 @@ Cria uma nova tarefa.
 {
   "id": 1,
   "title": "Nova tarefa",
-  "completed": false
+  "completed": false,
+  "created_at": "2024-11-25T01:06:53.803Z",
+  "updated_at": "2024-11-25T01:06:53.803Z"
 }
 ```
 
@@ -96,7 +98,9 @@ Lista todas as tarefas.
   {
     "id": 1,
     "title": "Nova tarefa",
-    "completed": false
+    "completed": false,
+    "created_at": "2024-11-25T01:06:53.803Z",
+    "updated_at": "2024-11-25T01:06:53.803Z"
   }
 ]
 ```
@@ -119,7 +123,9 @@ Atualiza uma tarefa pelo id.
 {
   "id": 1,
   "title": "Tarefa atualizada",
-  "completed": true
+  "completed": true,
+  "created_at": "2024-11-25T01:06:53.803Z",
+  "updated_at": "2024-11-25T01:06:53.803Z"
 }
 ```
 

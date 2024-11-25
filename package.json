@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/app.ts",
+    "dev": "ts-node src/taskManager.ts",
     "build": "tsc",
-    "start": "node dist/app.js",
-    "migrate": "npx knex migrate:latest",
-    "migrate:make": "npx knex migrate:make"
+    "start": "node dist/taskManager.js",
+    "migrate": "npx knex migrate:latest"
   },
   "keywords": [],
   "author": "",

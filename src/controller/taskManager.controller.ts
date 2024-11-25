@@ -38,7 +38,7 @@ taskController.get('/tasks', async (_req: Request, res: Response) => {
     const { id } = req.params;
     try {
       await taskService.deleteTask(parseInt(id, 10));
-      res.status(204).send();
+      res.status(200).json({message: 'Tarefa deletada com sucesso.'});
     } catch (error) {
       res.status(500).json({ error: 'Erro ao deletar tarefa.' });
     }
