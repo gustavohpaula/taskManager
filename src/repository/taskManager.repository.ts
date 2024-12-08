@@ -1,5 +1,4 @@
-import knex from '../db/knex';
-
+import { knex } from '../db'; 
 export class TaskRepository {
   async createTask(data: { title: string }) {
     const [task] = await knex('tasks').insert(data).returning('*');

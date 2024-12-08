@@ -19,6 +19,7 @@ taskController.get('/tasks', async (_req: Request, res: Response) => {
       const tasks = await taskService.getAllTasks();
       res.status(200).json(tasks);
     } catch (error) {
+      console.log(error);
       res.status(500).json({ error: 'Erro ao listar tarefas.' });
     }
   });

@@ -2,29 +2,36 @@
   "name": "perojeto-final-node",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "ts-node src/taskManager.ts",
-    "build": "tsc",
-    "start": "node dist/taskManager.js",
-    "migrate": "npx knex migrate:latest"
+    "lint": "eslint src -c .ts",
+    "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex",
+    "test": "vitest",
+    "build": "tsup src --out-dir build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^22.9.3",
+    "@types/supertest": "^6.0.2",
+    "@vitest/expect": "^2.1.8",
+    "@vitest/spy": "^2.1.8",
+    "supertest": "^7.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.1",
     "knex": "^3.1.0",
-    "pg": "^8.13.1"
+    "pg": "^8.13.1",
+    "zod": "^3.23.8"
   }
 }
