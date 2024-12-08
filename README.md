@@ -24,6 +24,8 @@ Instale as dependências do projeto utilizando npm ou yarn:
 
 ```bash
 npm install
+e 
+yarn install
 ```
 ### Configuração do Banco de Dados
 Para este projeto, utilizamos PostgreSQL. Certifique-se de ter o PostgreSQL instalado e configurado na sua máquina.
