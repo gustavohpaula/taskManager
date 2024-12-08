@@ -12,7 +12,7 @@ Este projeto é uma API RESTful de gerenciamento de tarefas, com suporte para cr
 * Migrations: Para controle de versão do banco de dados.
 
 ## Ambiente de produção
-O projeto está rodando no render pela url https://taskmanager-kxmm.onrender.com/tasks
+O projeto está rodando no render pela url https://taskmanager-kxmm.onrender.com/tasks e pode ser testado de acordo com a documentação abaixo
 
 ## Configuração
 ### Clonando o Repositório
