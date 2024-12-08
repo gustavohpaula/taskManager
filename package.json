@@ -10,8 +10,8 @@
     "lint": "eslint src -c .ts",
     "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex",
     "test": "vitest",
-    "build": "tsup src --out-dir build",
-    "start": "node dist/app.js",
+    "build": "tsup src ",
+    "start": "node dist/taskManager.js",
     "migrate": "npx knex migrate:latest"
   },
   "license": "MIT",
@@ -24,6 +24,7 @@
     "@vitest/spy": "^2.1.8",
     "supertest": "^7.0.0",
     "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"
   },
@@ -34,6 +35,8 @@
     "express": "^4.21.1",
     "knex": "^3.1.0",
     "pg": "^8.13.1",
+    "rollup": "^4.28.1",
+    "vite": "^6.0.3",
     "zod": "^3.23.8"
   }
 }
