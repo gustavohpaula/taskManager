@@ -11,6 +11,9 @@ Este projeto é uma API RESTful de gerenciamento de tarefas, com suporte para cr
 * Typescript: Para garantir um código fortemente tipado.
 * Migrations: Para controle de versão do banco de dados.
 
+## Ambiente de produção
+O projeto está rodando no render pela url https://taskmanager-kxmm.onrender.com/tasks
+
 ## Configuração
 ### Clonando o Repositório
 Clone este repositório para o seu ambiente local:
